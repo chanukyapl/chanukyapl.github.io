@@ -1,0 +1,44 @@
+html{
+    scroll-behavior: smooth;
+    background: var(--primary-gradient);
+    width: 100vw;
+    height: 100vh;
+ }
+ 
+ *{
+     padding: 0px;
+     margin: 0px;
+ }
+ :root{
+     --primary: #FFF;
+     --primary-gradient: linear-gradient(45deg, rgba(2,225,225,0.5), rgba(225,0, 176, 0.5));
+     --glass: rgba(0,0,0,0.15);
+     --secondary-gradient: linear-gradient(45deg, rgb(28 20 233 / 50%), rgba(225,0, 176, 0.5));
+ }
+
+ #backgroundimg{
+    width: 50vw;
+    height: 50vh;
+    display: flex;
+    margin: 25vh auto;
+    box-shadow: 0px 0px 9px 5px white;
+    border-radius: 10px;
+    background: var(--glass);
+ }
+
+#backgroundimg img{
+    border-radius: 10px;
+}
+
+#backgroundimg .welcome{
+    display: flex;
+    margin: auto;
+    flex-direction: column;
+    align-items: center;
+    background: var(--secondary-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+    background-clip: text;
+}
+
