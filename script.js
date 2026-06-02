@@ -1,8 +1,8 @@
 const elements = document.querySelectorAll(".reveal");
 
 const observer = new IntersectionObserver(
-  entries => {
-    entries.forEach(entry => {
+  (entries) => {
+    entries.forEach((entry) => {
       if (entry.isIntersecting) {
         entry.target.classList.add("visible");
       }
@@ -11,4 +11,4 @@ const observer = new IntersectionObserver(
   { threshold: 0.15 }
 );
 
-elements.forEach(element => observer.observe(element));
+elements.forEach((element) => observer.observe(element));
